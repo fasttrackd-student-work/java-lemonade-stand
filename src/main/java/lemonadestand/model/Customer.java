@@ -17,7 +17,7 @@ public class Customer implements Person {
 
 	@Override
 	public String toString() {
-		return "Customer [name=" + getName() + ", phoneNumber=" + phoneNumber + "]";
+		return "Customer {name=" + getName() + ", phoneNumber=" + phoneNumber + "}";
 	}
 
 	@Override
