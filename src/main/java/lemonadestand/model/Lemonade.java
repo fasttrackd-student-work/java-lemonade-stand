@@ -1,7 +1,14 @@
 package lemonadestand.model;
 
-public class Lemonade {
+import java.io.Serializable;
+
+public class Lemonade implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6858462398572875916L;
+
 	private double lemonJuice;
 	
 	private double water;
@@ -20,10 +27,6 @@ public class Lemonade {
 		this.water = water;
 		this.sugar = sugar;
 		this.iceCubes = iceCubes;
-		calculatePrice();
-	}
-	
-	private void calculatePrice() {
 		price = (lemonJuice * .3) + (sugar * .15) + (CUP * .50);
 	}
 
