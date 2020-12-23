@@ -7,12 +7,16 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lemonade-stand</name>
 
+	<properties>
+		<maven.compiler.target>14</maven.compiler.target>
+		<maven.compiler.source>14</maven.compiler.source>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
+			<artifactId>jackson-databind</artifactId>
 			<version>2.12.0</version>
 		</dependency>
 	</dependencies>
-
 </project>

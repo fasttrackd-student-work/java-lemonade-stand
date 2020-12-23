@@ -1,0 +1,16 @@
+{
+	"customer": {
+		"name": "Will",
+		"phoneNumber": "9999999999"
+	},
+	"lemonades": [
+		{
+			"lemonJuice": 1.0,
+			"water": 1.0,
+			"sugar": 1.0,
+			"iceCubes": 1,
+			"price": 0.95
+		}
+	],
+	"total": 0.95
+}

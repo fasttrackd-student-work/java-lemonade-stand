@@ -16,8 +16,27 @@ public class Customer implements Person {
 		this.phoneNumber = phoneNumber;
 	}
 
+	public Customer() {
+	}
+
 	public String getPhoneNumber() {
 		return phoneNumber;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	@Override
@@ -54,10 +73,6 @@ public class Customer implements Person {
 		} else if (!phoneNumber.equals(other.phoneNumber))
 			return false;
 		return true;
-	}
-
-	public String getName() {
-		return name;
 	}
 
 }

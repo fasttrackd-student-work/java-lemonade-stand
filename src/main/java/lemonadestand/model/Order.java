@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Order implements Serializable {
 
 	/**
@@ -22,6 +23,24 @@ public class Order implements Serializable {
 		this.customer = customer;
 		lemonades = new ArrayList<>();
 		total = 0.0;
+	}
+	
+	public Order() {}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public void setLemonades(List<Lemonade> lemonades) {
+		this.lemonades = lemonades;
+	}
+
+	public void setTotal(double total) {
+		this.total = total;
 	}
 
 	public void addLemonade(Lemonade lemonade) {
