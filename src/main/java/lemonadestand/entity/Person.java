@@ -1,4 +1,4 @@
-package lemonadestand.model;
+package lemonadestand.entity;
 
 import java.io.Serializable;
 

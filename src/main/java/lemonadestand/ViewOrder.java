@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import lemonadestand.model.Order;
+import lemonadestand.entity.Order;
 
 public class ViewOrder {
 

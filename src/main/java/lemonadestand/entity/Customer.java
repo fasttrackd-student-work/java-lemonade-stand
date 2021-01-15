@@ -1,11 +1,13 @@
-package lemonadestand.model;
+package lemonadestand.entity;
 
-public class Customer implements Person {
+public class Customer implements Person, Entity {
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -3794595415717863667L;
+	
+	private Integer id;
 
 	private String name;
 	
@@ -17,6 +19,12 @@ public class Customer implements Person {
 	}
 
 	public Customer() {
+	}
+
+	public Customer(Integer id, String name, String phoneNumber) {
+		this.id = id;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getPhoneNumber() {
@@ -42,6 +50,14 @@ public class Customer implements Person {
 	@Override
 	public String toString() {
 		return "Customer {name=" + getName() + ", phoneNumber=" + phoneNumber + "}";
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	@Override
